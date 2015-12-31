@@ -5,10 +5,15 @@ Running this bash script will prompt the user to pick a root directory, and if p
 Example/Legend:
 
 ```
+1. Execute script
 ./txtDir.sh
-Welcome to TxtToDir
-Text files must be formatted as described in README.md
-Please provide a path (desired root dir): ~/Files/
+
+> Welcome to TxtToDir
+> Text files must be formatted as described in README.md
+
+3. Please issue a command (h for help):
+
+4. > h
 
 Legend:
 ------------------------------------------------------------------------
@@ -27,6 +32,11 @@ Legend:
 -Sample3				| /3
 ------------------------------------------------------------------------
 etc...
+Please provide a path (desired root dir): 
+
+3. Please provide a path (desired root dir): ~/Files/
+
+
 
 ```
 
