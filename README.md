@@ -1,5 +1,5 @@
 # Translating .txt files to Directory Trees
-------------------------------------------------------------------------
+
 Running this bash script will prompt the user to pick a root directory, and if permissable, write the directories and sub-directories requested in a formatted .txt file.
 
 Sample:
