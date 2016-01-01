@@ -1,8 +1,8 @@
 #! /bin/bash
 
-#Help text
-function helpMsg()
-{
+#Legend text, for use with plan.txt
+function legend(){
+	echo "Format your plan.txt file to look like this:"
 	echo ""
 	echo "Legend:"
 	echo "------------------------------------------------------------------------"
@@ -20,22 +20,43 @@ function helpMsg()
 	echo "-Sample3			| /3"
 	echo "------------------------------------------------------------------------"
 	echo "etc..."
-	echo ""
+	echo "With your desired folder names."
 }
 
+#Help msg
+function helpMsg(){
+	echo "Commands:"
+	echo "------------------------------------------------------------------------"
+	echo "	h	displays this message"
+	echo "	l	displays the legend, formatting fors plan.txt"
+	echo "	q	quits and prints Goodbye!"
+	echo "------------------------------------------------------------------------"
+}
+
+#Set root path
+function setPath(){
+	read -p "> Please provide a path (desired root dir): " path
+}
 
 echo "> Welcome to TxtToDir"
 echo "> Text files must be formatted as described in README.md"
+echo ""
 
+#Initialize $command for the while loop below
 command="null"
 
+#Until user tries to quit, take commands. Command is not case-sensitive.
 while [[ $command != [Qq] ]]; do
 	read -p "> Please issue a command (h for help): " command
+	echo ""
 	case "$command" in 
-		[Hh]* ) helpMsg;;
-		[Nn]* ) echo "no";;
-		[Qq]* ) echo "Goodbye!";;
-		* ) echo "invalid";;
+		[Hh]* ) helpMsg;;								#Print help message
+		[Ll]* ) legend;;								#Print legend (for plan.txt)
+		[Pp]* ) setPath;;								#Take a path for rootDir
+		[Qq]* ) echo "Goodbye!";;						#Terminate
+		* ) echo "Invalid command, try h for help";;	#Invalid, try another command
 	esac
+	echo ""
 done
+
 

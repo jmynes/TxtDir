@@ -13,7 +13,7 @@ Example/Legend:
 
 3. Please issue a command (h for help):
 
-4. > h
+4. > Please issue a command (h for help): h
 
 Legend:
 ------------------------------------------------------------------------
@@ -32,9 +32,14 @@ Legend:
 -Sample3				| /3
 ------------------------------------------------------------------------
 etc...
-Please provide a path (desired root dir): 
 
-3. Please provide a path (desired root dir): ~/Files/
+4. > Please issue a command (h for help):
+
+5. > Please issue a command (h for help): p
+
+6. > Please provide a path (desired root dir): 
+
+7. > Please provide a path (desired root dir): ~/Files/
 
 
 
