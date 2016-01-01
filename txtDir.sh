@@ -1,5 +1,9 @@
 #! /bin/bash
 
+#This clears the terminal when printed 
+# Source: https://stackoverflow.com/questions/5367068/clear-the-ubuntu-bash-screen-for-real
+alias clear='printf "\033c"'
+
 #Legend text, for use with plan.txt
 function legend(){
 	echo "Format your plan.txt file to look like this:"
@@ -27,9 +31,11 @@ function legend(){
 function helpMsg(){
 	echo "Commands:"
 	echo "------------------------------------------------------------------------"
-	echo "	h	displays this message"
-	echo "	l	displays the legend, formatting fors plan.txt"
-	echo "	q	quits and prints Goodbye!"
+	echo "	c	Clear the terminal"
+	echo "	h	Displays this message"
+	echo "	l	Displays the legend, formatting fors plan.txt"
+	echo "	p	Prompts the user for a root directory"
+	echo "	q	Quits and prints Goodbye!"
 	echo "------------------------------------------------------------------------"
 }
 
@@ -49,7 +55,8 @@ command="null"
 while [[ $command != [Qq] ]]; do
 	read -p "> Please issue a command (h for help): " command
 	echo ""
-	case "$command" in 
+	case "$command" in
+		[Cc]* ) clear;;									#Clear the terminal
 		[Hh]* ) helpMsg;;								#Print help message
 		[Ll]* ) legend;;								#Print legend (for plan.txt)
 		[Pp]* ) setPath;;								#Take a path for rootDir
@@ -58,5 +65,3 @@ while [[ $command != [Qq] ]]; do
 	esac
 	echo ""
 done
-
-

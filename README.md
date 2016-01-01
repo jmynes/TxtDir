@@ -11,9 +11,9 @@ Example/Legend:
 > Welcome to TxtToDir
 > Text files must be formatted as described in README.md
 
-3. Please issue a command (h for help):
+3. > Please issue a command (h for help):
 
-4. > Please issue a command (h for help): h
+4. > Please issue a command (h for help): l
 
 Legend:
 ------------------------------------------------------------------------
