@@ -2,6 +2,14 @@
 
 Running this bash script will prompt the user to pick a root directory, and (if permissable) write the directories and sub-directories from a formatted .txt file to the chosen root directory.
 
+Commands supported:
+
+	c	Clear the terminal
+	h	Displays this message
+	l	Displays the legend, formatting fors plan.txt
+	p	Prompts the user for a root directory
+	q	Quits and prints Goodbye!
+
 ## Execution Example
 
 ```
