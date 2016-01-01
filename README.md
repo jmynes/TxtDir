@@ -157,7 +157,13 @@ Videos
 --DL
 ```
 ##TO-DO:
-
-1. Test
-2. Test
-..* Test
+- [ ] Fix path input
+  - [ ] Sanitize
+  - [ ] If path is invalid, inform the user and prompt again
+  - [ ] Allow for use of ~ . .. etc
+- [ ] Translate .txt into commands
+  - [ ] Given the .txt file is already formatted properly, write directories
+  - [ ] If directories exist, prompt user with ability to fix this
+  - [ ] Also fixing it in the .txt
+  - [ ] Sanitize .txt file automatically?
+- [ ] Allow commands at execution time, as flags, rather than interactive script
