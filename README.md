@@ -6,7 +6,7 @@ Running this bash script will prompt the user to pick a root directory, and (if 
 
 	c	Clear the terminal
 	h	Displays this message
-	l	Displays the legend, formatting fors plan.txt
+	l	Displays the legend, formatting for plan.txt
 	p	Prompts the user for a root directory
 	q	Quits and prints Goodbye!
 
