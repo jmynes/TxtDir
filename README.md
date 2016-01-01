@@ -2,7 +2,7 @@
 
 Running this bash script will prompt the user to pick a root directory, and if permissable, write the directories and sub-directories requested in a formatted .txt file.
 
-Example/Legend:
+## Execution Example
 
 ```
 1. Execute script
@@ -49,7 +49,7 @@ Root dir: /home/user/Files
 
 ```
 
-Real World Example:
+## Plan.txt Example
 ```
 #Number of - Denotes parent directory
 .
