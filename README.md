@@ -159,12 +159,12 @@ Videos
 ##TO-DO:
 
 1. Path input
-..* Sanitize
-..* If path is invalid, inform the user and prompt again
-..* Allow for use of ~ . .. etc
+...+Sanitize
+...+If path is invalid, inform the user and prompt again
+...+Allow for use of ~ . .. etc
 2. Translate .txt into commands
-..* Given the .txt file is already formatted properly, write directories
-..* If directories exist, prompt user with ability to fix this
-...* Also fixing it in the .txt
-..* Sanitize .txt file automatically?
+...+Given the .txt file is already formatted properly, write directories
+...+If directories exist, prompt user with ability to fix this
+...+Also fixing it in the .txt
+...+Sanitize .txt file automatically?
 3. Allow commands at execution time, as flags, rather than interactive script
