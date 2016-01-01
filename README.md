@@ -10,9 +10,8 @@ Running this bash script will prompt the user to pick a root directory, and (if 
 	p	Prompts the user for a root directory
 	q	Quits and prints Goodbye!
 
-## Execution Example
+## Execution Example:
 
-```
 1. Execute script
 ./txtDir.sh
 
@@ -55,10 +54,8 @@ Root dir: /home/user/Files
 
 6. > Please issue a command (h for help): 
 
-```
+## Plan.txt Example:
 
-## Plan.txt Example
-```
 #Number of - Denotes parent directory
 .
 Computers and Tech
@@ -163,7 +160,7 @@ Videos
 -Youtube
 --UL
 --DL
-```
+
 ##TO-DO:
 - [ ] Fix path input
   - [ ] Sanitize
