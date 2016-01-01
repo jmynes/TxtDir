@@ -8,12 +8,12 @@ Example/Legend:
 1. Execute script
 ./txtDir.sh
 
-> Welcome to TxtToDir
-> Text files must be formatted as described in README.md
+------------------------------------------------------------------------
+Welcome to TxtToDir
+Text files must be formatted as described in README.md
+------------------------------------------------------------------------
 
-3. > Please issue a command (h for help):
-
-4. > Please issue a command (h for help): l
+2. > Please issue a command (h for help): l
 
 Legend:
 ------------------------------------------------------------------------
@@ -32,16 +32,20 @@ Legend:
 -Sample3				| /3
 ------------------------------------------------------------------------
 etc...
+Starting from provided rootDir, with your desired folder names.
 
-4. > Please issue a command (h for help):
+3. > Please issue a command (h for help): s
 
-5. > Please issue a command (h for help): p
+Present working directory:
+/home/user/TxtToDir 
 
-6. > Please provide a path (desired root dir): 
+4. > Please provide desired root directory:  /home/user/Files/
 
-7. > Please provide a path (desired root dir): ~/Files/
+Root dir: /home/user/Files
 
+5. > Is that correct? (Y/N): Y
 
+6. > Please issue a command (h for help): 
 
 ```
 

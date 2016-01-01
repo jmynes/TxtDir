@@ -24,7 +24,7 @@ function legend(){
 	echo "-Sample3			| /3"
 	echo "------------------------------------------------------------------------"
 	echo "etc..."
-	echo "With your desired folder names."
+	echo "Starting from provided rootDir, with your desired folder names."
 }
 
 #Help msg
@@ -39,29 +39,57 @@ function helpMsg(){
 	echo "------------------------------------------------------------------------"
 }
 
-#Set root path
-function setPath(){
-	read -p "> Please provide a path (desired root dir): " path
+#Print working directory
+function printDir(){
+	echo "Present working directory:"
+	pwd
 }
 
-echo "> Welcome to TxtToDir"
-echo "> Text files must be formatted as described in README.md"
+#Set root path
+##TODO: Sanitize input, validate before execution
+function setPath(){
+	
+	#Initialize $yn for the while loop below
+	yn="null"
+	
+	while [[ $yn != [Yy] ]]; do
+	
+		printDir;
+		echo ""
+		read -p "> Please provide desired root directory: " path
+		echo ""
+		echo "Root dir:" $path
+		echo ""
+		read -p "> Is that correct? (Y/N): " yn
+		case $yn in
+			[Yy]* ) cd $path; break;;
+			[Nn]* ) echo "";;
+			* ) echo "Please answer yes or no.";;
+		esac
+	done
+}
+
 echo ""
+echo "------------------------------------------------------------------------"
+echo "Welcome to TxtToDir"
+echo "Text files must be formatted as described in README.md"
+echo "------------------------------------------------------------------------"
 
 #Initialize $command for the while loop below
 command="null"
 
 #Until user tries to quit, take commands. Command is not case-sensitive.
 while [[ $command != [Qq] ]]; do
+	echo ""
 	read -p "> Please issue a command (h for help): " command
 	echo ""
 	case "$command" in
 		[Cc]* ) clear;;									#Clear the terminal
 		[Hh]* ) helpMsg;;								#Print help message
 		[Ll]* ) legend;;								#Print legend (for plan.txt)
-		[Pp]* ) setPath;;								#Take a path for rootDir
-		[Qq]* ) echo "Goodbye!";;						#Terminate
+		[Pp]* ) printDir;;
+		[Ss]* ) setPath;;								#Take a path for rootDir
+		[Qq]* ) echo "Goodbye!" && echo "";;			#Terminate
 		* ) echo "Invalid command, try h for help";;	#Invalid, try another command
 	esac
-	echo ""
 done
