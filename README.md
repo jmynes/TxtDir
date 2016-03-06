@@ -4,12 +4,12 @@ Running this bash script will prompt the user to pick a root directory, and (if 
 
 ## Commands supported:
 
-  c Clear:               Clears the terminal
-  h Help:                Displays this message
-  l Legend:              Displays the legend, formatting for plan.txt
-  p Pres dir:            Prints present root directory
-  s Set dir:             Prompts the user to choose a new root directory
-  q Quit:                Quits and prints Goodbye!
+	c	Clear:               Clears the terminal
+	h	Help:                Displays this message
+	l	Legend:              Displays the legend, formatting for plan.txt
+	p Pres dir:         Prints present root directory
+  s	Set dir:             Prompts the user to choose a new root directory
+	q	Quit:                Quits and prints Goodbye!
 
 ## Execution Example
 
@@ -26,19 +26,19 @@ Text files must be formatted as described in README.md
 
 Legend:
 ------------------------------------------------------------------------
-.txt representation   | Folder's relation to provided root dir
+.txt representation		| Folder's relation to provided root dir
 ------------------------------------------------------------------------
--1            | /1
---1A          | /1/1A
----1Aa          | /1/1A/1Aa
---1B          | /1/1B/
+-1						| /1
+--1A					| /1/1A
+---1Aa					| /1/1A/1Aa
+--1B					| /1/1B/
 
--Sample2        | /2
---Sample2A        | /2/2A
---Sample2B        | /2/2B
---Sample2C        | /2/2C
+-Sample2				| /2
+--Sample2A				| /2/2A
+--Sample2B				| /2/2B
+--Sample2C				| /2/2C
 
--Sample3        | /3
+-Sample3				| /3
 ------------------------------------------------------------------------
 etc...
 Starting from provided rootDir, with your desired folder names.
