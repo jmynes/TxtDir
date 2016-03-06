@@ -2,7 +2,7 @@
 
 Running this bash script will prompt the user to pick a root directory, and (if permissable) write the directories and sub-directories from a formatted .txt file to the chosen root directory.
 
-## Commands supported:
+## Commands Supported:
 
 	c	Clear:			Clears the terminal
 	h	Help:			Displays this message
@@ -11,6 +11,12 @@ Running this bash script will prompt the user to pick a root directory, and (if 
 	s	Set dir:		Prompts the user to choose a new root directory
 	q	Quit:			Quits and prints Goodbye!
 
+## Unimplemented Commands:
+
+	e	Execute:		Executes core function of txtDir
+	f	File:			Prompts user for plan.txt if not set in path
+	n	New:			Prompts user to write new plan.txt in set path
+	
 ## Execution Example
 
 ```
