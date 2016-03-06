@@ -4,11 +4,12 @@ Running this bash script will prompt the user to pick a root directory, and (if 
 
 ## Commands supported:
 
-	c	Clear the terminal
-	h	Displays this message
-	l	Displays the legend, formatting for plan.txt
-	p	Prompts the user for a root directory
-	q	Quits and prints Goodbye!
+	c	Clear:               Clears the terminal
+	h	Help:                Displays this message
+	l	Legend:              Displays the legend, formatting for plan.txt
+	p Pres dir:         Prints present root directory
+  s	Set dir:             Prompts the user to choose a new root directory
+	q	Quit:                Quits and prints Goodbye!
 
 ## Execution Example
 

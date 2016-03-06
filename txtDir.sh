@@ -9,9 +9,9 @@ function legend(){
 	echo "Format your plan.txt file to look like this:"
 	echo ""
 	echo "Legend:"
-	echo "------------------------------------------------------------------------"
+	echo "--------------------------------------------------------------------------------"
 	echo ".txt representation		| Folder's relation to provided root dir"
-	echo "------------------------------------------------------------------------"
+	echo "--------------------------------------------------------------------------------"
 	echo "-1				| /1"
 	echo "--1A				| /1/1A"
 	echo "---1Aa				| /1/1A/1Aa"
@@ -22,7 +22,7 @@ function legend(){
 	echo "--Sample2C			| /2/2C"
 	echo ""
 	echo "-Sample3			| /3"
-	echo "------------------------------------------------------------------------"
+	echo "--------------------------------------------------------------------------------"
 	echo "etc..."
 	echo "Starting from provided rootDir, with your desired folder names."
 }
@@ -30,13 +30,14 @@ function legend(){
 #Help msg
 function helpMsg(){
 	echo "Commands:"
-	echo "------------------------------------------------------------------------"
-	echo "	c	Clear the terminal"
-	echo "	h	Displays this message"
-	echo "	l	Displays the legend, formatting fors plan.txt"
-	echo "	p	Prompts the user for a root directory"
-	echo "	q	Quits and prints Goodbye!"
-	echo "------------------------------------------------------------------------"
+	echo "--------------------------------------------------------------------------------"
+	echo "	c	Clear:		Clears the terminal"
+	echo "	h	Help:		Displays this message"
+	echo "	l	Legend:		Displays legend, formatting for plan.txt"
+	echo "	p	Pres dir:	Prints present root directory"
+	echo "	s	Set dir:	Prompts user for new root directory"
+	echo "	q	Quit:		Quits and prints Goodbye!"
+	echo "--------------------------------------------------------------------------------"
 }
 
 #Print working directory
@@ -70,10 +71,10 @@ function setPath(){
 }
 
 echo ""
-echo "------------------------------------------------------------------------"
+echo "--------------------------------------------------------------------------------"
 echo "Welcome to TxtToDir"
 echo "Text files must be formatted as described in README.md"
-echo "------------------------------------------------------------------------"
+echo "--------------------------------------------------------------------------------"
 
 #Initialize $command for the while loop below
 command="null"
